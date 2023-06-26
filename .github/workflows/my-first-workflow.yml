@@ -1,0 +1,10 @@
+name: My First Workflow
+
+on: [ workflow_dispatch ]
+
+jobs:
+  demo:
+    name: Demo
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🥳 This is my for demo step"
