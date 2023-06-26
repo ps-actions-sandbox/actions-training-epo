@@ -2,7 +2,7 @@ name: 'Hello World Docker Action'
 
 descriptioin: 'Our first docker action'
 
-input:
+inputs:
   who-to-greet:
     description: 'Who to greet'
     required: true
