@@ -1,6 +1,6 @@
 # GitHub Actions Fundamentals (EPO)
 
-Repo for the `GitHub Actions Fundamentals` training.
+Repo for the `GitHub Actions Fundamentals` training for EPO.
 
 ## 👉 Objectives
 
