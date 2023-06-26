@@ -16,5 +16,5 @@ jobs:
           who-to-greet: super-linters
       - name: Print Outputs
         run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
-      - run: echo "#### Workflow Details :rocket:" >> GITHUB_STEP_SUMMARY
-      - run: echo "Greeting time was ${{ steps.hello-action.outputs.time }}" >> GITHUB_STEP_SUMMARY
+      - run: echo "#### Workflow Details :rocket:" >> $GITHUB_STEP_SUMMARY
+      - run: echo "Greeting time was ${{ steps.hello-action.outputs.time }}" >> $GITHUB_STEP_SUMMARY
