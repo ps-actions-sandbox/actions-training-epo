@@ -1,0 +1,15 @@
+name: Reusing Workflow
+
+on: [workflow_dispatch]
+
+jobs:
+  reusing-workflow:
+    uses: ./.github/workflows/reusable-workflow.yml
+    with: 
+      who-to-greet: epo
+      
+  using-output:
+    runs-on: ubuntu-latest
+    needs: reusing-workflow
+    steps:
+      - run: echo "Time was ${{ needs.reusing-workflow.outputs.current-time }}"
