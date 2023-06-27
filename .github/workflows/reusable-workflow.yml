@@ -8,10 +8,18 @@ on:
         type: string
         required: true
         default: EPO
+    outputs:
+        current-time:
+         value: ${{ jobs.reusable-job.outputs.time }}       
 
 jobs:
   reusable-job:
     runs-on: ubuntu-latest
+    outputs:
+      time: ${{ steps.time.outputs.time }}
     steps:
       - name: Greeting
         run: echo "Hi ${{ inputs.who-to-greet }}"
+      - name: Set time
+        id: time
+        run: echo "time=$(date)" >> $GITHUB_OUTPUT
