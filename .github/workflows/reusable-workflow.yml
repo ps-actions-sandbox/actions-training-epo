@@ -1,0 +1,17 @@
+name: Reusable Workflow Example
+
+on:
+  workflow_call:
+    inputs:
+      who-to-greet:
+        description: 'The person to greet'
+        type: string
+        required: true
+        default: EPO
+
+jobs:
+  reusable-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting
+        run: echo "Hi ${{ inputs.who-to-greet }}"
