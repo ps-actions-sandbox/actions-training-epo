@@ -38,7 +38,7 @@ jobs:
     needs: [Test, Load-Test]
     environment: Staging
     steps:
-      - run: echo "🧪 Staging...
+      - run: echo "🧪 Staging..."
           
   Production:
     runs-on: ubuntu-latest
