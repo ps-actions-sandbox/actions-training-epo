@@ -1,5 +1,7 @@
 # GitHub Actions Fundamentals (EPO)
 
+[![Staged Deplpoyment](https://github.com/ps-actions-sandbox/actions-fundamentals-epo/actions/workflows/staged-deployment.yml/badge.svg?branch=main)](https://github.com/ps-actions-sandbox/actions-fundamentals-epo/actions/workflows/staged-deployment.yml)
+
 Repo for the `GitHub Actions Fundamentals` training for EPO.
 
 ## 👉 Objectives
